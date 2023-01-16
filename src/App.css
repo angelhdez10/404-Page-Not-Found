@@ -2,30 +2,88 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root {
+  min-height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.scarecrow {
+  height: 40vmin;
+  width: auto;
+  left: auto;
+}
+
+header {
+  position: absolute;
+  background-color: #efefef;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  text-align: left;
+  left: 77px;
+  top: 40px;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #efefef;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.App-header h2 {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+}
+
+.InfoPage {
+  text-align: left;
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.backToHome {
+  height: 68px;
+  width: 216px;
+  color: white;
+  background-color: #212121;
+  border: none;
+  border-radius: 5px;
+}
+
+.backToHome:hover {
+  cursor: pointer;
+}
+
+.backToHome:active {
+  background-color: #45453f;
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    top: 1.75rem;
+    left: 2.25rem;
+  }
+
+  .App-header {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 4.75rem;
+    margin-left: auto;
+  }
+
+  .InfoPage {
+    margin-left: 2rem;
+    padding-left: auto;
+    text-align: left;
+    align-items: flex-start;
+  }
 }
 
 @keyframes App-logo-spin {

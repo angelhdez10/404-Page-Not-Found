@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./Scarecrow.png";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header>404 NOT FOUND</header>
+      <div className="App-header">
+        <div className="Logo">
+          <img src={logo} className="scarecrow" alt="logo" />
+        </div>
+        <div className="InfoPage">
+          <h2>I have bad news for you</h2>
+          <p>
+            The page you are looking for might be removed or is temporarily
+            unavailable
+          </p>
+          <button className="backToHome" href="localhost:3000/home">
+            BACK TO HOMEPAGE
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
